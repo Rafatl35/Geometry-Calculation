@@ -1,11 +1,11 @@
 function calculateRectangleArea(){
-    // get lenght of the ractangle
+    // get length of the rectangle
     const lengthInput = document.getElementById('rectangle-length');
     const lengthText = lengthInput.value;
     const length = parseFloat(lengthText)
     console.log(lengthText);
     
-    // get width of the ractangle
+    // get width of the rectangle
     const widthInput = document.getElementById('rectangle-width');
     const widthText = widthInput.value;
     const width = parseFloat(widthText);
@@ -13,7 +13,7 @@ function calculateRectangleArea(){
     // calculation
     const area = length * width;
     console.log(area);
-    // display area ractangle
+    // display area rectangle
     const areaSpan = document.getElementById('rectangle-area');
     areaSpan.innerText = area;
 }

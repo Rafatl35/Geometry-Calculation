@@ -25,10 +25,10 @@
                         <h2 class="card-title">Triangle</h2>
                         <p class="text-center text-2xl">Area (A) = 0.5 X b X h</p>
                         <div class="flex items-center">
-                            <input id="traingle-base" class="w-16 text-2xl p-2 bg-slate-300 rounded-sm" type="text"
+                            <input id="traingle-base" class="w-24  text-2xl p-2 bg-slate-300 rounded-sm" type="text"
                                 placeholder="b" name="" id="">
                             <span class="mr-2 ml-2">cm</span>
-                            <input class="w-16 text-2xl p-2 bg-slate-300 rounded-sm" type="text" placeholder="h" name=""
+                            <input class="w-24  text-2xl p-2 bg-slate-300 rounded-sm" type="text" placeholder="h" name=""
                                 id="traingle-hight">
                             <span class="mr-2 ml-2">cm</span>
                         </div>
@@ -40,18 +40,18 @@
                         </div>
                     </div>
                 </div>
-                <!-- Ractangle card -->
+                <!-- Rectangle card -->
                 <div class="card w-auto bg-base-300 shadow-xl">
                     <figure><img class="px-4 py-4" src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Ractangle</h2>
                         <p class="text-center text-2xl">Area (A) = W X L</p>
                         <div class="flex items-center">
-                            <!-- ractangle  length-->
-                            <input class="w-16 text-2xl p-2 bg-slate-300 rounded-sm" type="text" name=""
+                            <!-- rectangle  length-->
+                            <input class="w-24  text-2xl p-2 bg-slate-300 rounded-sm" type="text" name=""
                                 id="rectangle-length" placeholder="L"> <span class="mr-2 ml-2">cm</span>
-                            <!-- ractangle width -->
-                            <input class="w-16 text-2xl p-2 bg-slate-300 rounded-sm" type="text" name=""
+                            <!-- rectangle width -->
+                            <input class="w-24  text-2xl p-2 bg-slate-300 rounded-sm" type="text" name=""
                                 id="rectangle-width" placeholder="W"> <span class="mr-2 ml-2">cm</span>
                         </div>
                         <div>
@@ -67,10 +67,19 @@
                     <figure><img class="px-4 py-4" src="images/parallelogram.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p class="text-2xl">Area (A) = 0.5 X p X b</p>
+                        <div class="flex items-center">
+                            <input class="w-24 text-2xl p-2 bg-slate-300 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="base">
+                            <span class="mr-2 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 bg-slate-300 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="height">
+                            <span class="mr-2 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="parallelogram-area"></span>cm <sub>2</sub></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -122,6 +131,7 @@
     </footer>
     <script src="scripts/traingle-calculate.js"></script>
     <script src="scripts/ractangle-area.js"></script>
+    <script src="scripts/parallelogram-area.js"></script>
 </body>
 
 </html>

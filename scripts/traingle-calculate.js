@@ -8,7 +8,7 @@
  */
 
 function calculateTriangleArea(){
-    //get traingle base value
+    //get triangle base value
     const traingleBaseInput = document.getElementById('traingle-base');
     const traingleBaseText = traingleBaseInput.value;
     const base = parseFloat(traingleBaseText)
