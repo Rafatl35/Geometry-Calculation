@@ -19,25 +19,52 @@
             <!-- shape card container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 <!-- Triangle card -->
-                <div class="card w-auto bg-base-100 shadow-xl">
+                <div class="card  w-auto bg-base-300 shadow-xl">
                     <figure><img src="images/triangle.png" alt="Triangle" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
-                        <p class="text-center">Area (A) = 0.5 X b X h</p>
+                        <p class="text-center text-2xl">Area (A) = 0.5 X b X h</p>
+                        <div class="flex items-center">
+                            <input id="traingle-base" class="w-16 text-2xl p-2 bg-slate-300 rounded-sm" type="text"
+                                placeholder="b" name="" id="">
+                            <span class="mr-2 ml-2">cm</span>
+                            <input class="w-16 text-2xl p-2 bg-slate-300 rounded-sm" type="text" placeholder="h" name=""
+                                id="traingle-hight">
+                            <span class="mr-2 ml-2">cm</span>
+                        </div>
                         <div>
-                            <input class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="b" name="" id="">
-                            <span class="mr-2 ml-2">cm</span>
-                            <input class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="h" name="" id="">
-                            <span class="mr-2 ml-2">cm</span>
+                            <p class="text-2xl">Area: <span id="traingle-area">0</span><span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- card -->
-                <div class="card w-auto bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                <!-- Ractangle card -->
+                <div class="card w-auto bg-base-300 shadow-xl">
+                    <figure><img class="px-4 py-4" src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ractangle</h2>
+                        <p class="text-center text-2xl">Area (A) = W X L</p>
+                        <div class="flex items-center">
+                            <!-- ractangle  length-->
+                            <input class="w-16 text-2xl p-2 bg-slate-300 rounded-sm" type="text" name=""
+                                id="rectangle-length" placeholder="L"> <span class="mr-2 ml-2">cm</span>
+                            <!-- ractangle width -->
+                            <input class="w-16 text-2xl p-2 bg-slate-300 rounded-sm" type="text" name=""
+                                id="rectangle-width" placeholder="W"> <span class="mr-2 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="rectangle-area">0</span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Parallelogram card -->
+                <div class="card w-auto bg-base-300 shadow-xl">
+                    <figure><img class="px-4 py-4" src="images/parallelogram.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Shoes!</h2>
@@ -47,9 +74,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- card -->
-                <div class="card w-auto bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                <!-- Rhombus card -->
+                <div class="card w-auto bg-base-300 shadow-xl">
+                    <figure><img class="px-4 py-4" src="images/rhombus.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Shoes!</h2>
@@ -59,9 +86,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- card -->
-                <div class="card w-auto bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                <!--Pentagon card -->
+                <div class="card w-auto bg-base-300 shadow-xl">
+                    <figure><img class="px-4 py-4" src="images/pentagon.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Shoes!</h2>
@@ -71,17 +98,30 @@
                         </div>
                     </div>
                 </div>
+                <!--Ellipse card -->
+                <div class="card w-auto bg-slate-300 shadow-xl">
+                    <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
             </div>
             <!-- Area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-md">
                 <h3 class="text-3xl text-center p-4">Area calculation</h3>
             </div>
         </div>
+        
     </main>
     <footer>
 
     </footer>
     <script src="scripts/traingle-calculate.js"></script>
+    <script src="scripts/ractangle-area.js"></script>
 </body>
 
 </html>
