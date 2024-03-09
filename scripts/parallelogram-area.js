@@ -30,7 +30,7 @@ function calculateParallelogramArea(){
 
 function getInputValueId(inputFieldId){
     const inputField = document.getElementById(inputFieldId)
-    const inputValueText = inputField.value ;
+    const inputValueText = inputField.value;
     const inputValue = parseFloat(inputValueText);
     // console.log(inputValue);
     return inputValue;
